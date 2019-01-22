@@ -1,0 +1,45 @@
+extends ./templates/layout
+block header
+    - const active = 2
+    include templates/header
+block content
+    .productBanner
+    .coreProducts.coreSelf
+        h5 核心产品
+        p Core Products
+        .products.productsSelf
+            diV
+                .a-product
+                    img(src='./images/call.jpg')
+                    .mask 亲情呼叫
+            div
+                .a-product
+                    img(src='./images/sleep.jpg')
+                    .mask 起夜助手
+            div
+                .a-product
+                    img(src='./images/lamp.jpg')
+                    .mask 生活助理
+            div
+                .a-product
+                    img(src='./images/computer.jpg')
+                    .mask 安全管家
+            div
+                .a-product
+                    img(src='./images/oneTap.jpg')
+                    .mask 一键睡眠
+            div
+                .a-product
+                    img(src='./images/family.jpg')
+                    .mask 家庭看护
+            div
+                .a-product
+                    img(src='./images/tech.jpg')
+                    .mask 智能科技
+            div
+                .a-product
+                    img(src='./images/computer.jpg')
+                    .mask 安全管家
+block footer
+    include templates/footer
+block script

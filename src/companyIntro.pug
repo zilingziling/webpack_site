@@ -1,0 +1,35 @@
+extends templates/layout
+block header
+    - const active = 3
+    include templates/header
+block content
+    .companyIntroBanner
+    ul.history
+        li
+            h4 2008
+            span 成立 Establish
+        li
+            h4 1043
+            span 客户 Client
+        li
+            h4 165
+            span 团队 Team
+        li
+            h4 50
+            span 奖项 Award
+    .about-us
+        img(src='images/about_us.jpg')
+        .intros
+            h5 关于我们
+            span About us
+            p 成立于2008年6月，总部位于中国广州，是一家专注于智能设备研发的创新型科技公司，“将未来科技融入生活”是公司的产品理念，通过三年研发投入，构建基于VASTCONN物联云为核心的城市智能控制中枢信息平台，帮助传统电子设备厂商及创客实现设备智能物联升级，同时优选百万出货级别的智能精品，将其共同整合于平台，形成智慧家庭、智慧园区、智慧农业、智慧养老、智慧城市等不同层面的物联网行业解决方案提供给政府及行业客户，合力共同建设绿色低碳、节能环保的新城市。
+    .our
+        h6 我们的愿景
+        span Our vision
+        p 人工智能时代已经来临，我们本着整合各方资源，通过软硬件的深层次开发，为希望在这个人工智能产品时代迅速开发出适合自己用户的广大客户提供快的智能产品解决方案。面对新的市场机遇和挑战，我们将坚持"以高科技服务社会" 的宗旨，加强技术研发力度，加速产品化进程，为用户提供成熟先进的产品设计方案，以先进的高科技产品、优秀的产品解决方案、完善的服务、严格的管理体制，为客户带来实实在在的利益。
+    .our
+        h6 我们的使命
+        span Our mission
+        p 为希望在这个人工智能产品时代迅速开发出适合自己用户的广大客户提供快的智能产品解决方案。面对新的市场机遇和挑战，我们将坚持"以高科技服务社会" 的宗旨，加强技术研发力度，加速产品化进程，为用户提供成熟先进的产品设计方案。
+block footer
+    include templates/footer

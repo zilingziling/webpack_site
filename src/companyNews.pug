@@ -1,0 +1,32 @@
+extends templates/layout
+block header
+    - const active = 3
+    include templates/header
+block content
+    .companyNewsBanner
+    .news.newsSelf
+        h5 公司动态
+        p Company News
+        ul
+            a(href='#' class='news-text')
+                h6 百度AI布局 ‘智慧会展’
+                span 2019-1-18
+                p 2018年1月11日至13日，“第十四届中国会展经济合作论坛CEFCO 2018”大会在青岛顺利召开，共吸引超过来...
+            a(href='#' class='news-text')
+                h6 公交系统或即将启动Apple Pay服务
+                span 2019-1-18
+                p 苹果的Apple Pay 支付服务除了可以用于网购、实体店支付和App Store 支付外，还可以支持公交系统的刷...
+            a(href='#' class='news-text')
+                h6 百度AI布局“智慧会展” CEFCO反响热烈
+                span 2019-1-18
+                p 2018年1月11日至13日，“第十四届中国会展经济合作论坛CEFCO 2018”大会在青岛顺利召开，共吸引超过来...
+            a(href='#' class='news-text')
+                h6 360人工智能的落地和现实
+                span 2019-1-18
+                p 和讯科技12月19日消息，2017和讯科技风云榜暨第十五届中国财经风云榜在北京盛大召开。本届论坛以“科技...
+            a(href='#' class='news-text')
+                h6 学界与工业界的AI研究
+                span 2019-1-18
+                p 我之前在学术界，现在在工业界。现在不少学界的科学家都到公司里面做研发，通常遇到的一个问题是：在...
+block footer
+    include templates/footer

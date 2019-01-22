@@ -1,0 +1,78 @@
+extends templates/layout
+block header
+    - const active = 1
+    include ./templates/header
+block content
+    .main
+        .swiper-container
+            .swiper-wrapper
+                .swiper-slide
+                    img(src='./images/banner_1.jpg')
+                .swiper-slide
+                    img(src='./images/banner_2.jpg')
+            .swiper-pagination
+        ul.history
+            li
+                h4 2008
+                span 成立 Establish
+            li
+                h4 1043
+                span 客户 Client
+            li
+                h4 165
+                span 团队 Team
+            li
+                h4 50
+                span 奖项 Award
+        .aboutUs
+            .filler
+                h5 关于我们
+                span About us
+                img(src='images/glasses.jpg')
+                p 技术解决实际问题，科技发展有限公司通过三年研发投入，形成智慧家庭、智慧园区、智慧农业、智慧养老、智慧城市等不同层面的物联网行业解决方案。
+
+        .coreProducts
+            h5 核心产品
+            p 家庭应用平台，可持续发展的智能家居体验
+            .products
+                diV
+                    .a-product
+                        img(src='./images/call.jpg')
+                        .mask 亲情呼叫
+                div
+                    .a-product
+                        img(src='./images/sleep.jpg')
+                        .mask 起夜助手
+                div
+                    .a-product
+                        img(src='./images/lamp.jpg')
+                        .mask 生活助理
+                div
+                    .a-product
+                        img(src='./images/computer.jpg')
+                        .mask 安全管家
+            a(href='./coreProducts.html' class='moreButton') MORE +
+        .idea
+            h5 研发理念
+            p 提供便捷智能，可持续发展的智能家居体验
+            img(src='images/handsShake.png')
+            .detail
+                p 通过三年研发投入，构建基于VASTCONN物联云为核心的城市智能控制中枢信息平台，帮助传统电子设备厂商及创客实现设备智能物联升级，同时优选百万出货级别的智能精品，将其共同整合于平台，形成智慧家庭、智慧园区、智慧农业、智慧养老，合力共同建设绿色低碳、节能环保的新城市。
+        .news
+            h5 新闻资讯
+            p 不同层面的物联网行业解决方案
+            ul
+                a(href='#' class='news-text')
+                    h6 百度AI布局 ‘智慧会展’
+                    span 2019-1-18
+                    p 2018年1月11日至13日，“第十四届中国会展经济合作论坛CEFCO 2018”大会在青岛顺利召开，共吸引超过来...
+                a(href='#' class='news-text')
+                    h6 360人工智能的落地和现实
+                    span 2019-1-18
+                    p 和讯科技12月19日消息，2017和讯科技风云榜暨第十五届中国财经风云榜在北京盛大召开。本届论坛以“科技...
+                a(href='#' class='news-text')
+                    h6 学界与工业界的AI研究
+                    span 2019-1-18
+                    p 我之前在学术界，现在在工业界。现在不少学界的科学家都到公司里面做研发，通常遇到的一个问题是：在...
+block footer
+    include templates/footer.pug

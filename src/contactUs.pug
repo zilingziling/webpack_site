@@ -1,0 +1,19 @@
+extends templates/layout
+block header
+    - const active = 5
+    include templates/header
+block content
+    .contactBanner
+    .contactUs
+        h5 联系我们
+        span Contact Us
+        .way
+            .text
+                h6 TECHNOLOGY 智能科技有限公司
+                p 公司通过三年研发投入，形成智慧家庭、智慧园区、智慧农业、智慧养老、智慧城市等不同层面的物联网行业解决方案。
+                p 联系邮箱：contact@fkadjkhsf.co
+                p 联系电话：020-000000 000-000000
+                p 联系地址：XXX省XXX市XXX县XXX路XXX号
+            img(src='images/contact.jpg')
+block footer
+    include templates/footer

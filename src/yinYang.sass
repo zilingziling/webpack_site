@@ -1,0 +1,41 @@
+$d: 65vmin
+$f: .5
+$t: 1s
+body
+  background-color: #4c8dae
+.title
+  color: #4c8dae
+.wrapper
+  position: relative
+  width: $d
+  height: $d
+  border-radius: 50%
+  background: linear-gradient(white 50%, black 0)
+  animation: r 2*$t linear infinite
+
+  &::before,&::after
+    --i: 0
+    position: absolute
+    top: 25%
+    right: calc((1 - var(--i)) * 50%)
+    bottom: 25%
+    left: calc(var(--i) * 50%)
+    border: solid $d/6 hsl(0, 0%, calc(var(--i) * 100%))
+    transform-origin: calc(var(--i) * 100%) 50%
+    transform: scale($f)
+    background: hsl(0,0%,calc((1 - var(--i)) * 100%))
+    border-radius: 50%
+    animation: s $t ease-in-out calc(var(--i)*#{-$t}) infinite alternate
+    content: ''
+  &:after
+    --i: 1
+
+
+@keyframes s
+  to
+    transform: scale(2 - $f)
+@keyframes r
+  to
+    transform: rotate(1turn)
+
+

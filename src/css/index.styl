@@ -1,0 +1,536 @@
+// 复用样式
+h5()
+  h5
+    font-weight: 400
+    margin-bottom: 5px
+    font-size: 20px
+    color rgba(68, 68, 68, 1)
+
+span()
+  span
+    display: block
+    font-size 13px
+    color rgba(166, 166, 166, 1)
+
+p()
+  p
+    font-size 14px
+    color rgba(128, 128, 128, 1)
+    width 68%
+    line-height: 34px;
+
+a()
+  a
+    text-decoration: none
+    color #333333
+
+h6()
+  h6
+    font-size: 16px;
+    font-weight: 400;
+    color: #333;
+    line-height: 1.5;
+    word-break: break-all;
+
+header
+  width: 100%
+  height: 70px
+  position: fixed
+  top: 0
+  left: 0
+  background: #fff
+  z-index 10
+  // X轴偏移 Y轴偏移 模糊 扩散 色值
+  box-shadow: 0 2px 6px rgba(0, 0, 0, .1)
+
+  nav
+    width calc(100% - 320px)
+    height 70px
+    margin auto
+    display flex
+    justify-content space-between
+    align-items center
+
+
+.navUl
+  width 33%
+  display flex
+  flex-direction row
+  justify-content: space-between
+  align-items center
+  list-style none
+
+  .active
+    border-bottom 2px solid #333
+
+  li
+    width: 80px
+    height: 65px
+    text-align: center
+    cursor pointer
+    border-bottom 2px solid transparent
+
+    a
+      line-height: 65px
+
+  li:not(active):hover
+    border-bottom 2px solid #333
+
+  a
+    text-decoration: none
+    color: #333333
+
+  .innerUl
+    position absolute
+    display: none
+    list-style none
+    padding-left 0
+    padding-top 20px
+    top: 70px
+    left: -40px
+    z-index 3
+
+    .companyIntro
+      border-top-left-radius 3px
+      border-top-right-radius 3px
+      box-shadow: 0 1px 6px rgba(0, 0, 0, .15);
+
+    .companyNews
+      border-bottom-left-radius 3px
+      border-bottom-right-radius 3px
+      box-shadow: 0 1px 6px rgba(0, 0, 0, .15);
+
+    li
+      width: 160px
+      height: 50px
+      line-height: 50px
+      text-align: center
+      background: #ffffff
+
+      &:hover
+        background: #f7f7f7
+        border-bottom 2px solid transparent
+
+      a
+        line-height: 50px
+
+  .aboutLi
+    position: relative
+
+    &:hover
+      .innerUl
+        display: block
+
+
+.main
+  .swiper-container
+    width: 100%
+    height: 860px
+    position relative
+
+
+  .my-bullet
+    width: 13px
+    height: 4px
+    background-color: rgba(229, 229, 229, .4)
+    border-radius 4px
+    display: inline-block
+    margin: 2px
+    cursor pointer
+    transition all .3s
+
+    &:not(.my-bullet-active):hover
+      width: 26px
+      background-color: #e5e5e5
+
+    &.my-bullet-active
+      width: 26px
+      background-color: #e5e5e5
+
+.history
+  display: flex
+  justify-content: space-around
+  height: 258px
+  list-style none
+  text-align: center
+
+  li
+    display: inline-flex
+    align-items: center
+    flex-direction: column
+    justify-content: center
+
+    h4
+      font-size: 32px
+      font-weight: 400
+      color rgba(68, 68, 68, 1)
+      margin: 0
+
+    span
+      font-size: 13px
+      color rgba(128, 128, 128, 1)
+
+.aboutUs
+  height: 1008px
+  position relative
+  background: url('../images/road.jpg') center / cover no-repeat
+
+  .filler
+    height: 408px
+    position absolute
+    top 300px
+    left calc(50% + 50px)
+    h5()
+    span()
+
+    img
+      margin-top: 35px
+      margin-bottom: 30px
+    p()
+
+// 核心产品样式
+
+.coreProducts
+  text-align: center
+  padding 0 40px
+  margin 125px 0
+  h5()
+
+  p
+    font-size 14px
+    color rgba(128, 128, 128, 1)
+    margin-top: 0
+    margin-bottom: 100px
+  a()
+
+  a
+    width: 235px
+    height: 40px
+    display: inline-block
+    border 1px solid #4c4c4c
+    line-height: 40px
+
+    &:hover
+      background-color: #4c4c4c
+      color white
+
+  .products
+    display: flex
+    justify-content: space-between
+    margin-bottom: 100px
+
+    > div
+      overflow: hidden
+
+      .a-product
+        width: 22%
+        height: 264px
+        position relative
+        transition all .5s
+
+        &:hover
+          transform scale(1.1)
+
+        .mask
+          width: 410px
+          height: 44px
+          line-height: 44px
+          color white
+          background-color alpha(#000, .7)
+          position absolute
+          bottom: 0
+          left: 0
+
+.idea
+  height: 800px
+  text-align: center
+  position relative
+
+  p
+    margin 0 auto 115px
+  h5()
+  p()
+
+  img
+    width: 32%
+    position absolute
+    top: 25%
+    left: 15%
+
+  .detail
+    background url("../images/background-1.jpg") center / cover no-repeat
+    width 100%
+    height: 490px
+    p()
+
+    p
+      width: 34%
+      height: 108px
+      position absolute
+      top: 42%
+      right: 13%
+      margin-bottom 0
+      text-align left
+
+.news
+  width: 90%
+  margin auto
+  text-align: center
+  margin-bottom: 150px
+
+  p
+    margin auto
+  h5()
+  p()
+  a()
+
+  .news-text
+    display: block
+    height: 155px
+    position: relative
+    padding-top: 20px
+    transition all .5s ease-out
+
+    span
+      position absolute
+      right: 8%
+      top: 34%
+      color: #999;
+
+    &:not(:last-child):before
+      content ''
+      position absolute
+      border-bottom 1px solid #ececec
+      width 95%
+      height: 0
+      bottom: 0
+      left: 1%
+
+    &:hover
+      box-shadow: 0 0 6px 2px rgba(0, 0, 0, .1)
+
+    p
+      text-align left
+      margin-left: 3%
+    h6()
+
+    h6
+      text-align left
+      margin-left: 3%
+      margin-bottom: 15px
+
+// 脚部
+footer
+  width: 100%
+  height: 42px
+  background: #f4f4f4
+  text-align: center
+  color #666
+  a()
+
+  a
+    line-height: 42px
+    font-size 12px
+
+// 核心产品
+.productBanner
+  width: 100%
+  height: 380px
+  margin-top: 25px
+  background: url("../images/productBanner.jpg") center / cover no-repeat
+
+.productsSelf
+  flex-wrap wrap
+
+  > div
+    margin-bottom 45px
+
+.coreSelf
+  margin-bottom 100px
+
+// 公司简介
+.companyIntroBanner
+  width: 100%
+  height: 380px
+  margin-top: 25px
+  background: url("../images/introBanner.jpg") center / cover no-repeat
+
+.about-us
+  width: 75%
+  margin auto
+  display: flex
+  justify-content: space-between
+
+  img
+    margin-right 30px
+
+  .intros
+    h5()
+    p()
+    span()
+
+    p
+      width: 100%
+
+.our
+  width: 76%
+  margin auto
+  h6()
+  span()
+  p()
+
+  p
+    width: 100%
+    margin-top: 30px
+    margin-bottom: 40px
+    font-size: 13px
+
+  h6
+    margin-bottom: 5px
+    margin-top: 95px
+
+// 公司动态
+.companyNewsBanner
+  width: 100%
+  height: 380px
+  margin-top: 70px
+  background: url("../images/companyNewsBanner.jpg") center / cover no-repeat
+
+.newsSelf
+  margin-top: 100px
+  margin-bottom: 115px
+
+  p
+    margin-bottom: 100px
+
+// 新闻资讯
+.informationBanner
+  width: 100%
+  height: 380px
+  margin-top: 70px
+  background: url("../images/informationBanner.jpg") center / cover no-repeat
+
+.information
+  h5()
+  span()
+  text-align: center
+  h5
+    margin-top: 100px
+  span
+    margin-bottom: 100px
+.newsList
+  display: flex
+  justify-content: space-between
+  width: 90%
+  margin auto
+  margin-bottom: 100px
+  .list
+    display: block
+    width: 22%
+    position relative
+    transition all .5s
+    cursor pointer
+    padding: 20px
+    border-radius 10px
+    text-align left
+    overflow: hidden
+    padding-bottom: 50px
+    p()
+    span()
+    h6()
+    span
+      margin-bottom: 20px
+    h6
+      margin-bottom: 20px
+    p
+      width: 100%
+
+
+    .imgbox
+      width: 100%
+      height: 200px
+      overflow: hidden
+      transition all  .2s
+    &:hover
+      box-shadow: 0 0 6px 2px rgba(0, 0, 0, .1)
+
+
+    .imgBox_1
+      background: url("../images/building.png") center / 100% no-repeat;
+
+    .imgBox_2
+      background: url("../images/building_2.jpg") center / 100% no-repeat;
+
+    .imgBox_3
+      background: url("../images/building_3.jpg") center / 100% no-repeat;
+
+    .imgBox_4
+      background: url("../images/building_4.jpg") center / 100% no-repeat;
+    .arrow
+      width: 30px
+      height: 32px
+      position absolute
+      right: 23px
+      background:url("../images/arrows.png");
+      background-position: -23px -332px
+      transition all  .36s ease
+
+    .invisibleArrow
+      content ''
+      position absolute
+      right  62px
+      width: 30px
+      height: 55px
+      transition all  .36s ease
+      background:url("../images/arrows.png");
+      background-position: -23px -332px
+      opacity 0
+
+    &:hover .imgbox
+      background-size 110%
+    &:hover  .arrow
+        opacity: 0;
+        right: 0
+    &:hover .invisibleArrow
+          opacity 1
+          right 27px
+//联系我们
+.contactBanner
+  width: 100%
+  height: 380px
+  margin-top: 70px
+  background: url("../images/contactUs.jpg") center / cover no-repeat
+.contactUs
+  text-align: center
+  margin-bottom: 100px
+  img
+    max-width 100%
+    position: relative
+    right -40px
+  .way
+    display: flex
+    justify-content: space-between
+    width: 75%
+    margin auto
+  h5()
+  h5
+    margin-top: 100px
+  h6()
+  p()
+  span()
+  p
+    width: 85%
+    font-style: 12px
+  span
+    margin-bottom: 80px
+  .text
+    h6
+      margin-bottom: 20px
+      margin-top: 60px
+    text-align left
+    & :nth-child(2)
+      margin-bottom: 60px
+      line-height: 34px
+    p
+      line-height: 20px
+
